@@ -1,0 +1,16 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [PurchaseOrderID]
+      ,[RevisionNumber]
+      ,[Status]
+      ,[EmployeeID]
+      ,[VendorID]
+      ,[ShipMethodID]
+      ,[OrderDate]
+      ,[ShipDate]
+      ,[SubTotal]
+      ,[TaxAmt]
+      ,[Freight]
+      ,[TotalDue]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Purchasing].[PurchaseOrderHeader]
+  WHERE SubTotal >= 200;
