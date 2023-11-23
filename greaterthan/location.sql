@@ -134,4 +134,10 @@ SELECT
       ,[PurchasingWebServiceURL]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Purchasing].[Vendor]
-  WHERE (Name LIKE 'A%' OR Name LIKE 'T%')
+  WHERE (Name LIKE 'A%' OR Name LIKE 'T%')\
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CountryRegionCode]
+      ,[CurrencyCode]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[CountryRegionCurrency]
+  WHERE (CurrencyCode LIKE 'B%' OR CurrencyCode LIKE 'A%')
