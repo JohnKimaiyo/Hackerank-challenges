@@ -117,3 +117,10 @@ SELECT
   FROM [AdventureWorks2019].[Production].[ScrapReason]
 
   WHERE (Name LIKE 'B%' OR Name LIKE 'C%')
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 
+      [Name]
+  
+  FROM [AdventureWorks2019].[Production].[UnitMeasure]
+  WHERE (Name LIKE 'B%' OR Name LIKE 'C%')
