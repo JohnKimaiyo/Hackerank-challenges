@@ -168,3 +168,17 @@ SELECT TOP (1000) [CurrencyRateID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[CurrencyRate]
   WHERE (ToCurrencyCode LIKE 'A%' OR  ToCurrencyCode LIKE 'C%')
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [TerritoryID]
+      ,[Name]
+      ,[CountryRegionCode]
+      ,[Group]
+      ,[SalesYTD]
+      ,[SalesLastYear]
+      ,[CostYTD]
+      ,[CostLastYear]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[SalesTerritory]
+  WHERE ([Group] LIKE 'N%' OR [Group] LIKE 'E%');
