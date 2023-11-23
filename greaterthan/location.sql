@@ -124,3 +124,14 @@ SELECT
   
   FROM [AdventureWorks2019].[Production].[UnitMeasure]
   WHERE (Name LIKE 'B%' OR Name LIKE 'C%')
+
+  SELECT TOP (1000) [BusinessEntityID]
+      ,[AccountNumber]
+      ,[Name]
+      ,[CreditRating]
+      ,[PreferredVendorStatus]
+      ,[ActiveFlag]
+      ,[PurchasingWebServiceURL]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Purchasing].[Vendor]
+  WHERE (Name LIKE 'A%' OR Name LIKE 'T%')
