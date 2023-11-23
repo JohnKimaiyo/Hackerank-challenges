@@ -158,3 +158,13 @@ SELECT TOP (1000) [CurrencyCode]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[Currency]
   WHERE (Name LIKE 'E%' OR Name  LIKE 'A%');
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CurrencyRateID]
+      ,[CurrencyRateDate]
+      ,[FromCurrencyCode]
+      ,[ToCurrencyCode]
+      ,[AverageRate]
+      ,[EndOfDayRate]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[CurrencyRate]
+  WHERE (ToCurrencyCode LIKE 'A%' OR  ToCurrencyCode LIKE 'C%')
