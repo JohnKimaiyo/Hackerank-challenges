@@ -62,3 +62,9 @@ SELECT
   FROM [AdventureWorks2019].[Person].[Address]
 
   WHERE (City LIKE 'B%'  OR City LIKE 'P%'  OR City LIKE 'S%'  OR CITY LIKE 'E%')
+
+  SELECT 
+      [Name]
+      
+  FROM [AdventureWorks2019].[Person].[ContactType]
+  WHERE (NAME LIKE 'A%' OR NAME LIKE 'C%'   )
