@@ -74,3 +74,9 @@ SELECT
      
   FROM [AdventureWorks2019].[Person].[CountryRegion]
   WHERE(NAME LIKE 'A%' OR NAME LIKE 'U%');
+
+  SELECT 
+      [FirstName]
+      
+  FROM [AdventureWorks2019].[Person].[Person]
+  WHERE (FirstName LIKE 'K%' OR FirstName LIKE 'G%')
