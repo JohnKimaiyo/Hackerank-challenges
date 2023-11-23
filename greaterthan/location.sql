@@ -169,7 +169,7 @@ SELECT TOP (1000) [CurrencyRateID]
   FROM [AdventureWorks2019].[Sales].[CurrencyRate]
   WHERE (ToCurrencyCode LIKE 'A%' OR  ToCurrencyCode LIKE 'C%')
 
-  /****** Script for SelectTopNRows command from SSMS  ******/
+  /****** Script for SelectTopNRows command from owdpo SSMS  ******/
 SELECT TOP (1000) [TerritoryID]
       ,[Name]
       ,[CountryRegionCode]
