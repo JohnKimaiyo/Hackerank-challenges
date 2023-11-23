@@ -141,3 +141,13 @@ SELECT TOP (1000) [CountryRegionCode]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[CountryRegionCurrency]
   WHERE (CurrencyCode LIKE 'B%' OR CurrencyCode LIKE 'A%')
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CreditCardID]
+      ,[CardType]
+      ,[CardNumber]
+      ,[ExpMonth]
+      ,[ExpYear]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[CreditCard]
+  WHERE(CardType LIKE 'S%' OR CardType LIKE 'D%');
