@@ -45,3 +45,16 @@ SELECT TOP (1000) [ProductID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Production].[Product]
   WHERE SafetyStockLevel > 500 AND ReorderPoint> 500;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [TransactionID]
+      ,[ProductID]
+      ,[ReferenceOrderID]
+      ,[ReferenceOrderLineID]
+      ,[TransactionDate]
+      ,[TransactionType]
+      ,[Quantity]
+      ,[ActualCost]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Production].[TransactionHistoryArchive]
+  WHERE ActualCost >200 AND Quantity > 100
