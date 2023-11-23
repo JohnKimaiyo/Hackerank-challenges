@@ -72,3 +72,19 @@ SELECT TOP (1000) [WorkOrderID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Production].[WorkOrder]
   WHERE OrderQty > 10 AND StockedQty >10;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [WorkOrderID]
+      ,[ProductID]
+      ,[OperationSequence]
+      ,[LocationID]
+      ,[ScheduledStartDate]
+      ,[ScheduledEndDate]
+      ,[ActualStartDate]
+      ,[ActualEndDate]
+      ,[ActualResourceHrs]
+      ,[PlannedCost]
+      ,[ActualCost]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Production].[WorkOrderRouting]
+  WHERE  OperationSequence > 5  AND ActualResourceHrs > 3;
