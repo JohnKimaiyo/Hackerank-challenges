@@ -58,3 +58,17 @@ SELECT TOP (1000) [TransactionID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Production].[TransactionHistoryArchive]
   WHERE ActualCost >200 AND Quantity > 100
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [WorkOrderID]
+      ,[ProductID]
+      ,[OrderQty]
+      ,[StockedQty]
+      ,[ScrappedQty]
+      ,[StartDate]
+      ,[EndDate]
+      ,[DueDate]
+      ,[ScrapReasonID]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Production].[WorkOrder]
+  WHERE OrderQty > 10 AND StockedQty >10;
