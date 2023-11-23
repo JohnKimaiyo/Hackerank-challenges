@@ -102,3 +102,20 @@ SELECT TOP (1000) [PurchaseOrderID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Purchasing].[PurchaseOrderDetail]
   WHERE ReceivedQty > 100 AND StockedQty > 100;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [PurchaseOrderID]
+      ,[RevisionNumber]
+      ,[Status]
+      ,[EmployeeID]
+      ,[VendorID]
+      ,[ShipMethodID]
+      ,[OrderDate]
+      ,[ShipDate]
+      ,[SubTotal]
+      ,[TaxAmt]
+      ,[Freight]
+      ,[TotalDue]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Purchasing].[PurchaseOrderHeader]
+  WHERE RevisionNumber > 5 AND TaxAmt > 50;
