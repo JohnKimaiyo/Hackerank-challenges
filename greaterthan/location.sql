@@ -68,3 +68,9 @@ SELECT
       
   FROM [AdventureWorks2019].[Person].[ContactType]
   WHERE (NAME LIKE 'A%' OR NAME LIKE 'C%'   )
+
+  SELECT 
+      [Name]
+     
+  FROM [AdventureWorks2019].[Person].[CountryRegion]
+  WHERE(NAME LIKE 'A%' OR NAME LIKE 'U%');
