@@ -47,3 +47,10 @@ SELECT TOP (1000) [BusinessEntityID]
       [Name]
         FROM [AdventureWorks2019].[HumanResources].[Department]
   WHERE  (name like 'E%' OR Name like 'T%')
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 
+      [JobTitle]
+    
+  FROM [AdventureWorks2019].[HumanResources].[Employee]
+  WHERE (JobTitle LIKE 'C%'  OR JobTitle  LIKE 'V%' OR JobTitle LIKE 'E%' OR JobTitle LIKE 'S%')
