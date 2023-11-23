@@ -109,3 +109,11 @@ SELECT
     
   FROM [AdventureWorks2019].[Production].[ProductSubcategory]
   WHERE (Name LIKE 'M%' OR Name LIKE 'R%');
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 
+      [Name]
+   
+  FROM [AdventureWorks2019].[Production].[ScrapReason]
+
+  WHERE (Name LIKE 'B%' OR Name LIKE 'C%')
