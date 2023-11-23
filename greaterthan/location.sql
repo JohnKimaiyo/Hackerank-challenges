@@ -42,3 +42,8 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[SalesPerson]
   WHERE Bonus > 2000 AND SalesYTD > 1000000;
+
+ SELECT 
+      [Name]
+        FROM [AdventureWorks2019].[HumanResources].[Department]
+  WHERE  (name like 'E%' OR Name like 'T%')
