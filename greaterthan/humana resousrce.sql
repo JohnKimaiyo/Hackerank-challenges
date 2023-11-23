@@ -119,3 +119,13 @@ SELECT TOP (1000) [PurchaseOrderID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Purchasing].[PurchaseOrderHeader]
   WHERE RevisionNumber > 5 AND TaxAmt > 50;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ShipMethodID]
+      ,[Name]
+      ,[ShipBase]
+      ,[ShipRate]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Purchasing].[ShipMethod]
+  WHERE ShipBase >20  AND ShipRate> 1;
