@@ -151,3 +151,10 @@ SELECT TOP (1000) [CreditCardID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[CreditCard]
   WHERE(CardType LIKE 'S%' OR CardType LIKE 'D%');
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CurrencyCode]
+      ,[Name]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[Currency]
+  WHERE (Name LIKE 'E%' OR Name  LIKE 'A%');
