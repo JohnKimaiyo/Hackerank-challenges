@@ -129,3 +129,12 @@ SELECT TOP (1000) [ShipMethodID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Purchasing].[ShipMethod]
   WHERE ShipBase >20  AND ShipRate> 1;
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CreditCardID]
+      ,[CardType]
+      ,[CardNumber]
+      ,[ExpMonth]
+      ,[ExpYear]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[CreditCard]
+  WHERE ExpMonth > 5 AND ExpYear> 2005;
