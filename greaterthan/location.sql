@@ -86,3 +86,11 @@ SELECT
     
   FROM [AdventureWorks2019].[Person].[StateProvince]
   WHERE (Name LIKE 'A%' OR Name LIKE 'C%')
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 
+      [Name]
+    
+      
+  FROM [AdventureWorks2019].[Production].[Location]
+
+  WHERE (Name LIKE 'T%' OR Name LIKE 'S%')
