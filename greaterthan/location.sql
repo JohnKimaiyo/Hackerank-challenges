@@ -80,3 +80,9 @@ SELECT
       
   FROM [AdventureWorks2019].[Person].[Person]
   WHERE (FirstName LIKE 'K%' OR FirstName LIKE 'G%')
+
+  SELECT 
+      [Name]
+    
+  FROM [AdventureWorks2019].[Person].[StateProvince]
+  WHERE (Name LIKE 'A%' OR Name LIKE 'C%')
