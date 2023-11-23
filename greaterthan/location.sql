@@ -54,3 +54,11 @@ SELECT
     
   FROM [AdventureWorks2019].[HumanResources].[Employee]
   WHERE (JobTitle LIKE 'C%'  OR JobTitle  LIKE 'V%' OR JobTitle LIKE 'E%' OR JobTitle LIKE 'S%')
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT
+      [City]
+      
+  FROM [AdventureWorks2019].[Person].[Address]
+
+  WHERE (City LIKE 'B%'  OR City LIKE 'P%'  OR City LIKE 'S%'  OR CITY LIKE 'E%')
