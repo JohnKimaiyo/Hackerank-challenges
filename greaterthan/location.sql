@@ -30,3 +30,15 @@ SELECT TOP (1000) [SalesOrderID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[SalesOrderDetail]
   WHERE OrderQty > 3 AND LineTotal > 2000;
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [BusinessEntityID]
+      ,[TerritoryID]
+      ,[SalesQuota]
+      ,[Bonus]
+      ,[CommissionPct]
+      ,[SalesYTD]
+      ,[SalesLastYear]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[SalesPerson]
+  WHERE Bonus > 2000 AND SalesYTD > 1000000;
