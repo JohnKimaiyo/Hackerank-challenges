@@ -11,3 +11,7 @@ SELECT  ROUND(SUM(
       
       
   FROM [AdventureWorks2019].[Production].[Location]
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ROUND( SUM ([StandardCost]),2)
+  FROM [AdventureWorks2019].[Production].[ProductCostHistory]
