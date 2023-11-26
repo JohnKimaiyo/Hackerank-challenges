@@ -26,3 +26,8 @@ SELECT   ROUND(SUM([ListPrice]),2)
   /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT ROUND(SUM([ActualCost]),2)
   FROM [AdventureWorks2019].[Production].[TransactionHistoryArchive]
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ROUND(SUM([StandardPrice]),2)
+    
+  FROM [AdventureWorks2019].[Purchasing].[ProductVendor]
