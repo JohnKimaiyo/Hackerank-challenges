@@ -33,3 +33,16 @@ SELECT TOP (1000) [StateProvinceID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Person].[StateProvince]
   WHERE CountryRegionCode = 'CA'
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [TransactionID]
+      ,[ProductID]
+      ,[ReferenceOrderID]
+      ,[ReferenceOrderLineID]
+      ,[TransactionDate]
+      ,[TransactionType]
+      ,[Quantity]
+      ,[ActualCost]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Production].[TransactionHistory]
+  WHERE TransactionType = 'W';
