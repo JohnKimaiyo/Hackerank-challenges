@@ -21,3 +21,15 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Person].[Person]
   WHERE MiddleName = 'J'
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [StateProvinceID]
+      ,[StateProvinceCode]
+      ,[CountryRegionCode]
+      ,[IsOnlyStateProvinceFlag]
+      ,[Name]
+      ,[TerritoryID]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Person].[StateProvince]
+  WHERE CountryRegionCode = 'CA'
