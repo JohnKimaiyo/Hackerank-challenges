@@ -61,3 +61,10 @@ SELECT TOP (1000) [ProductID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Purchasing].[ProductVendor]
   WHERE UnitMeasureCode = 'CS';
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CountryRegionCode]
+      ,[CurrencyCode]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[Sales].[CountryRegionCurrency]
+  WHERE CurrencyCode = 'EUR';
