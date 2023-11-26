@@ -31,3 +31,9 @@ SELECT ROUND(SUM([ActualCost]),2)
 SELECT ROUND(SUM([StandardPrice]),2)
     
   FROM [AdventureWorks2019].[Purchasing].[ProductVendor]
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ROUND(SUM([LineTotal]),2)
+    
+      
+  FROM [AdventureWorks2019].[Purchasing].[PurchaseOrderDetail]
